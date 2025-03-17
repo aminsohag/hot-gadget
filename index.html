@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Gadget</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/a8144c5d0d.js" crossorigin="anonymous"></script>
+    <!-- tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .font-lato {
+            font-family: "Lato", serif;
+        }
+    </style>
+</head>
+
+<body class="font-lato">
+    <header class="container mx-auto px-4">
+        <!-- navbar -->
+        <div>
+            <nav class="py-4">
+                <div class="navbar">
+                    <div class="navbar-start">
+                        <a class="text-xl md:text-3xl font-bold text-[#0D6EFD]">Hot Gadgets</a>
+                    </div>
+                    <div class="navbar-end">
+                        <div>
+                            <button class="bg-[#0D6EFD] py-2 px-3 lg:px-5 rounded-lg text-xl text-white"><a>Sign
+                                    up</a></button>
+                        </div>
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow right-0">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- banner part -->
+        <!-- <div class="my-12">
+            <div class="lg:w-2/3 mx-auto space-y-5">
+                <h1 class="text-3xl md:text-5xl lg:text-7xl font-bold text-center">Apple Iphone 13 Pro Max</h1>
+                <p class="text-center">There are many variations of passages of Lorem Ipsum available, but the majority
+                    have suffered alteration in some form, by injected humou.</p>
+                <div class="text-center py-4">
+                    <button class="bg-[#0D6EFD] py-3 px-5 rounded-lg text-white">Buy Now</button>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <img src="images/Group 48095420.png" alt="">
+            </div>
+        </div> -->
+    </header>
+    <main>
+        <!-- first-section -->
+        <!-- <section class="container mx-auto">
+            <div class="my-24">
+                <h2 class="text-2xl md:text-4xl font-bold text-center">Search your phone</h2>
+                <div class="py-8">
+                    <div class="w-max bg-[#100F0F] rounded-lg bg-opacity-5 flex items-center mx-auto">
+                        <div class="pl-3 pr-16 md:pr-36 py-3">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input class="bg-transparent" type="text" name="" id="search-box"
+                                placeholder="search your phone">
+                        </div>
+                        <button onclick="handleSearch()" id="" class="bg-[#0D6EFD] p-3 rounded-lg">Search</button>
+                    </div>
+                </div>
+                <div id="spinner" class="text-center my-8 hidden">
+                    <span class="loading loading-spinner loading-lg"></span>
+                </div>
+                <div id="phones-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                </div>
+                <div class="text-center">
+                    <button onclick="showAll()" id="show-all" class="bg-[#0D6EFD] py-3 px-4 rounded-lg text-white">Show
+                        All</button>
+                </div>
+            </div>
+        </section> -->
+        <!-- modal -->
+        <div id="modal-container">
+            
+        </div>
+    </main>
+    <!-- <footer class="bg-[#0D6EFD] bg-opacity-5">
+        <section class="container mx-auto px-4 py-12">
+            <div class="flex flex-col md:flex-row justify-between gap-6 py-6">
+                <div class="space-y-2">
+                    <h2 class="text-4xl font-bold">Hot Gadgets</h2>
+                    <p>You can definitely work.</p>
+                </div>
+                <div class="flex items-center gap-6">
+                    <div class="space-x-4">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div>
+                        <button class="bg-[#0D6EFD] py-3 px-5 rounded-lg text-white">Join Premium</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 py-6">
+                <div class="space-y-2">
+                    <p>Product</p>
+                    <p>Browse jobs</p>
+                    <p>Remote jobs</p>
+                    <p>Startup jobs</p>
+                    <p>Company jobs</p>
+                </div>
+                <div class="space-y-2 lg:mx-auto">
+                    <p>Popular</p>
+                    <p>UI-UX Design</p>
+                    <p>Product Design</p>
+                    <p>Back-End Developer</p>
+                    <p>Front-End Developer</p>
+                </div>
+                <div class="space-y-2 lg:mx-auto">
+                    <p>Resource</p>
+                    <p>Faq</p>
+                    <p>Support</p>
+                    <p>Privacy Policy</p>
+                    <p>Terms of Service</p>
+                </div>
+                <div class="space-y-2 lg:justify-items-end">
+                    <p>Company</p>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                    <p>Career Tips</p>
+                    <p>Careers</p>
+                </div>
+            </div>
+        </section> -->
+    </footer>
+
+
+    <!-- js -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>
